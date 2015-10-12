@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<!-- DTD for one or more TREC video instance topic(s) -->
+ 
+<!ELEMENT videoInstanceTopics (videoInstanceTopic+)>
+ 
+<!ENTITY % videoInstanceTopic SYSTEM "videoInstanceTopic.dtd"> %videoInstanceTopic;
