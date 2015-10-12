@@ -634,8 +634,8 @@ $(".navigation").on( "click", ".topic", function(event){
 			$(".uploadedImages").html("");
 			$.each(e.items[0].images, function (index, file) {
                 
-                src = "topics2015/tv15.ins.example.images_resized/"+$(this)[0].src;
-                roi = "topics2015/masked/"+$(this)[0].roi;
+                src = "http://mklab-services.iti.gr/trec2015/topics2015/tv15.ins.example.images_resized/"+$(this)[0].src;
+                roi = "http://mklab-services.iti.gr/trec2015/topics2015/masked/"+$(this)[0].roi;
                 
                 $(".uploadedImages").append("<div class='upbox'><span class='deleteMe'><i class='fa fa-times'></i></span><img class='thumbnail' src='"+src+"'><a class='colorbox zoomer' data-name='"+$(this)[0].src+"' data-dir='../../topics2015/tv15.ins.example.images_resized/' href='http://mklab-services.iti.gr/trec2015_v1/"+src+"' ><svg x='0' y='0' width='24px' height='24px' viewBox='0 0 24 24' aria-label='Open' role='button' tabindex='0' title='Open' jsaction='click:eQuaEb'><path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' fill='rgba(255, 255, 255, 1)' stroke='none'></path><path d='M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z' fill='rgba(255, 255, 255, 1)' stroke='none'></path></svg></a></div>");
                 
