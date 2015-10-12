@@ -1,0 +1,85 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "VERGE API",
+        "description": "Learn how to use VERGE API for fast video search",
+        "version": "1.0.2"
+    },
+    "host": "mklab-services.iti.gr",
+    "schemes": [
+        "http"
+    ],
+    "basePath": "/verge/api/v1.2/verge",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/shots": {
+            "get": {
+                "summary": "Get video shots",
+                "description": "This method returns the shots of videos.\n",
+                "tags": [
+                    "Shots"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of shots (data[ ]) & information about the query"
+                    }
+                }
+            }
+        },
+        "/distinct/concepts": {
+            "get": {
+                "summary": "Get a list of the supported concepts.",
+                "description": "This method returns all the supported concepts\n",
+                "tags": [
+                    "Concepts"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array of concepts (strings)"
+                    }
+                }
+            }
+        },
+        "/concept_sort": {
+            "get": {
+                "summary": "Returns a list of shots sorted from the max concept score number they have.",
+                "description": "This method returns all the supported concepts\n",
+                "tags": [
+                    "Concepts"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success message from server"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Give a concept",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Give which page of results you want to print",
+                        "required": false,
+                        "type": "number",
+                        "format": "integer"
+                    },
+                    {
+                        "name": "pageNumber",
+                        "in": "query",
+                        "description": "The number of shots per page",
+                        "required": false,
+                        "type": "number",
+                        "format": "integer"
+                    }
+                ]
+            }
+        }
+    }
+}
