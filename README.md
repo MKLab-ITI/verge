@@ -14,7 +14,7 @@ Functionalities provided:
 An operational demo of the system is available http://mklab-services.iti.gr/verge/
 
 Prerequisites:
-  - An local server running to your pc
+  - A local server running to your pc
 
 
 Instructions:
