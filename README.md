@@ -11,7 +11,7 @@ Functionalities provided:
   - Endless scrolling
   - Fast video navigation
   
-An operational demo of the system is available http://mklab-services.iti.gr/verge/
+An operational demo of the system is available http://mklab-services.iti.gr/vss2016/
 
 Prerequisites:
   - A local server running to your pc
